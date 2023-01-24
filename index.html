@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,53 +9,53 @@
     <link rel="stylesheet" href="./style.css">
     <title>Form</title>
 </head>
+
 <body>
 
-    <div id="input_form">
-        <table>
-            <tr>
-                <td>First Name</td>
-                <td><input type="text" id="first_name"></td>
-            </tr>
+    <div>
+        <table id="input_form" class="input_form">
+            <tbody>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" id="first_name" class="input_box" placeholder="Eg. Prabhash"></td>
+                </tr>
 
-            <tr>
-                <td>Last Name</td>
-                <td><input type="text" id="last_name"></td>
-            </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" id="last_name" class="input_box" placeholder="Eg. Rai"></td>
+                </tr>
 
-            <tr>
-                <td>Gender</td>
-                <td><input type="radio" name="Gender">Male</td>
-                <td><input type="radio" name="Gender">Female</td>
-            </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td class="radio_options"><span><input type="radio" name="gender">Male</span> <span><input type="radio" name="gender">Female</span></td>
+                </tr>
 
-            <tr>
-                <td>Marital Status</td>
-                <td><input type="radio" name="MaritalStatus">Married</td>
-                <td><input type="radio" name="MaritalStatus">Unmarried</td>
-            </tr>
+                <tr>
+                    <td>Marital Status</td>
+                    <td class="radio_options"><span><input type="radio" name="maritalStatus">Married</span> <span><input type="radio" name="maritalStatus">Unmarried</span></td>
+                </tr>
 
-            <td>
-                <td>Name of Spouse</td>
-                <td><input type="text"></td>
-            </tr>
+                <tr>
+                    <td>Name of Spouse</td>
+                    <td><input type="text" class="input_box" id="name_of_spouse" placeholder="Write NA if not Married"></td>
+                </tr>
 
-            <tr>
-                <td>Other Details</td>
-                <td><input type="textarea"></td>
-            </tr>
-
-            <tr>
-                <td><input type="checkbox"></td>
-
-                <td>I accept <span id="terms_conditions" class="terms_conditions">terms and conditions</span></td>
-            </tr>
-
-            <tr>
-                <td><button>Reset</button></td>
-                <td><button>Save</button></td>
-            </tr>
+                <tr>
+                    <td>Other Details</td>
+                    <td><input type="textarea" class="input_box" id="other_details" placeholder="Eg. Hobbies"></td>
+                </tr>
+            </tbody>
         </table>
+
+        <div class="terms">
+            <pre><input type="checkbox"> I accept <strong id="terms_conditions" class="terms_conditions">terms and conditions</strong></pre>
+        </div>
+
+        <div class="form_buttons">
+            <button id="Reset" class="reset">Reset</button>
+            <button id="Save" class="save">Save</button>
+        </div>
     </div>
 </body>
+
 </html>
