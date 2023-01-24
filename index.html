@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./checking.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <div id="input_form">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="first_name"></td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="last_name"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="Gender">Male</td>
+                <td><input type="radio" name="Gender">Female</td>
+            </tr>
+
+            <tr>
+                <td>Marital Status</td>
+                <td><input type="radio" name="MaritalStatus">Married</td>
+                <td><input type="radio" name="MaritalStatus">Unmarried</td>
+            </tr>
+
+            <td>
+                <td>Name of Spouse</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Other Details</td>
+                <td><input type="textarea"></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox"></td>
+
+                <td>I accept <span id="terms_conditions" class="terms_conditions">terms and conditions</span></td>
+            </tr>
+
+            <tr>
+                <td><button>Reset</button></td>
+                <td><button>Save</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
