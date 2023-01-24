@@ -17,43 +17,43 @@
             <tbody>
                 <tr>
                     <td>First Name</td>
-                    <td><input type="text" id="first_name" class="input_box" placeholder="Eg. Prabhash"></td>
+                    <td><input type="text" id="first_name" name="first name" class="input_box" placeholder="Eg. Prabhash" autofocus></td>
                 </tr>
 
                 <tr>
                     <td>Last Name</td>
-                    <td><input type="text" id="last_name" class="input_box" placeholder="Eg. Rai"></td>
+                    <td><input type="text" id="last_name" name="last name" class="input_box" placeholder="Eg. Rai"></td>
                 </tr>
 
                 <tr>
                     <td>Gender</td>
-                    <td class="radio_options"><span><input type="radio" name="gender">Male</span> <span><input type="radio" name="gender">Female</span></td>
+                    <td class="radio_options"><span><input type="radio" name="gender" value="male">Male</span> <span><input type="radio" name="gender" value="female">Female</span></td>
                 </tr>
 
                 <tr>
                     <td>Marital Status</td>
-                    <td class="radio_options"><span><input type="radio" name="maritalStatus">Married</span> <span><input type="radio" name="maritalStatus">Unmarried</span></td>
+                    <td class="radio_options"><span><input type="radio" name="marital status" value="married">Married</span> <span><input type="radio" name="marital status" value="unmarried" onchange="marital()">Unmarried</span></td>
                 </tr>
 
                 <tr>
                     <td>Name of Spouse</td>
-                    <td><input type="text" class="input_box" id="name_of_spouse" placeholder="Write NA if not Married"></td>
+                    <td><input type="text" class="input_box" id="name_of_spouse" name="name of spouse" placeholder="Write NA if not Married"></td>
                 </tr>
 
                 <tr>
                     <td>Other Details</td>
-                    <td><input type="textarea" class="input_box" id="other_details" placeholder="Eg. Hobbies"></td>
+                    <td><input type="textarea" class="input_box" id="other_details" name="other details" placeholder="Eg. Hobbies"></td>
                 </tr>
             </tbody>
         </table>
 
         <div class="terms">
-            <pre><input type="checkbox"> I accept <strong id="terms_conditions" class="terms_conditions">terms and conditions</strong></pre>
+            <pre><input type="checkbox" id="terms_conditions"> I accept <strong>terms and conditions</strong></pre>
         </div>
 
         <div class="form_buttons">
-            <button id="Reset" class="reset">Reset</button>
-            <button id="Save" class="save">Save</button>
+            <button id="reset" class="reset">Reset</button>
+            <button id="save" class="save">Save</button>
         </div>
     </div>
 </body>
