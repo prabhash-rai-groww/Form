@@ -6,7 +6,7 @@ reset_button.addEventListener('click', remove_filled_details);
 
 const spouse_name = document.getElementById("name_of_spouse");
 
-function marital () {
+function marital() {
     spouse_name.disabled = true;
 }
 
@@ -93,6 +93,18 @@ function check_filled_data() {
 
     if (req_fields.size) {
         alert("Please fill these details => \n" + [...req_fields]);
+
+        for (element of req_fields) {
+            const empty_elements =  document.getElementsByName(element);
+
+            for (empty_element of empty_elements) {
+
+                empty_element.focus();
+                break;
+            }
+
+            break;
+        }
     }
     else {
         const terms = document.getElementById("terms_conditions");
@@ -100,6 +112,7 @@ function check_filled_data() {
             alert("Thanks for filling the form!!!");
         }
         else {
+            const terms_conditions = document.getElementById("terms_conditions");
             alert("Please accept the terms and conditions.");
         }
     }
