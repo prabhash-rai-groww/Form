@@ -14,47 +14,73 @@
 
     <div>
         <table id="input_form" class="input_form">
-            <tbody>
-                <tr>
-                    <td>First Name</td>
-                    <td><input type="text" id="first_name" name="first name" class="input_box" placeholder="Eg. Prabhash" autofocus></td>
-                </tr>
+            <form onsubmit="check_filled_data()">
+                <tbody>
+                    <tr>
+                        <td><label>First Name</label></td>
+                        <td>
+                            <input type="text" id="first_name" name="first name" class="input_box"
+                                placeholder="Eg. Prabhash" autofocus required />
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>Last Name</td>
-                    <td><input type="text" id="last_name" name="last name" class="input_box" placeholder="Eg. Rai"></td>
-                </tr>
+                    <tr>
+                        <td><label>Last Name</label></td>
+                        <td>
+                            <input type="text" id="last_name" name="last name" class="input_box" placeholder="Eg. Rai"
+                                required />
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>Gender</td>
-                    <td class="radio_options"><span><input type="radio" name="gender" value="male">Male</span> <span><input type="radio" name="gender" value="female">Female</span></td>
-                </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td class="radio_options">
+                            <span><input type="radio" name="gender" value="male" required/>Male</span>
+                            <span><input type="radio" name="gender" value="female" />Female</span>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>Marital Status</td>
-                    <td class="radio_options"><span><input type="radio" name="marital status" value="married">Married</span> <span><input type="radio" name="marital status" value="unmarried" onchange="marital()">Unmarried</span></td>
-                </tr>
+                    <tr>
+                        <td><label>Marital Status</label></td>
+                        <td class="radio_options">
+                            <span><input type="radio" name="marital status" value="married"/>Married</span>
+                            <span><input type="radio" name="marital status" value="unmarried"
+                                    onchange="marital()" required/>Unmarried</span>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>Name of Spouse</td>
-                    <td><input type="text" class="input_box" id="name_of_spouse" name="name of spouse" placeholder="Write NA if not Married"></td>
-                </tr>
+                    <tr>
+                        <td><label>Name of Spouse</label></td>
+                        <td><input type="text" class="input_box" id="name_of_spouse" name="name of spouse"
+                                placeholder="Eg. Abcd Efgh" required/></td>
+                    </tr>
 
-                <tr>
-                    <td>Other Details</td>
-                    <td><input type="textarea" class="input_box" id="other_details" name="other details" placeholder="Eg. Hobbies"></td>
-                </tr>
-            </tbody>
+                    <tr>
+                        <td><label>Other Details</label></td>
+                        <td>
+                            <input type="textarea" class="input_box" id="other_details" name="other details"
+                                placeholder="Eg. Hobbies" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <pre><input type="checkbox" id="terms_conditions" required /> I accept <strong>terms and conditions</strong></pre>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="reset" />
+                        </td>
+                        <td>
+                            <input type="submit" />
+                        </td>
+                    </tr>
+                </tbody>
+
+            </form>
         </table>
-
-        <div class="terms">
-            <pre><input type="checkbox" id="terms_conditions"> I accept <strong>terms and conditions</strong></pre>
-        </div>
-
-        <div class="form_buttons">
-            <button id="reset" class="reset">Reset</button>
-            <button id="save" class="save">Save</button>
-        </div>
     </div>
 </body>
 
