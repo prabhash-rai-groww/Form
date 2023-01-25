@@ -1,8 +1,16 @@
 const spouse_name = document.getElementById("name_of_spouse");
+const marital_status = document.getElementsByName("marital status");
 const terms_conditions = document.getElementById("terms_conditions");
 
 function marital() {
-    spouse_name.disabled = true;
+    for (option of marital_status) {
+        if (option.value === "unmarried" && option.checked) {
+            spouse_name.disabled = true;
+        }
+        else {
+            spouse_name.disabled = false;
+        }
+    }
 }
 
 function check_filled_data() {

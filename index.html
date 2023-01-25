@@ -11,8 +11,8 @@
 </head>
 
 <body>
-
-    <div>
+    <div class="container">
+        <h2 class="form_heading">Please fill this form</h2>
         <table id="input_form" class="input_form">
             <form onsubmit="check_filled_data()">
                 <tbody>
@@ -35,7 +35,7 @@
                     <tr>
                         <td><label>Gender</label></td>
                         <td class="radio_options">
-                            <span><input type="radio" name="gender" value="male" required/>Male</span>
+                            <span><input type="radio" name="gender" value="male" required />Male</span>
                             <span><input type="radio" name="gender" value="female" />Female</span>
                         </td>
                     </tr>
@@ -43,23 +43,24 @@
                     <tr>
                         <td><label>Marital Status</label></td>
                         <td class="radio_options">
-                            <span><input type="radio" name="marital status" value="married"/>Married</span>
-                            <span><input type="radio" name="marital status" value="unmarried"
-                                    onchange="marital()" required/>Unmarried</span>
+                            <span><input type="radio" name="marital status" value="married"
+                                    onchange="marital()" />Married</span>
+                            <span><input type="radio" name="marital status" value="unmarried" onchange="marital()"
+                                    required />Unmarried</span>
                         </td>
                     </tr>
 
                     <tr>
                         <td><label>Name of Spouse</label></td>
                         <td><input type="text" class="input_box" id="name_of_spouse" name="name of spouse"
-                                placeholder="Eg. Abcd Efgh" required/></td>
+                                placeholder="Eg. Abcd Efgh" required /></td>
                     </tr>
 
                     <tr>
                         <td><label>Other Details</label></td>
                         <td>
-                            <input type="textarea" class="input_box" id="other_details" name="other details"
-                                placeholder="Eg. Hobbies" required />
+                            <textarea class="input_text_area" id="other_details" name="other details"
+                                placeholder="Eg. Hobbies" required></textarea>
                         </td>
                     </tr>
 
@@ -71,10 +72,10 @@
 
                     <tr>
                         <td>
-                            <input type="reset" />
+                            <input type="reset" class="reset" />
                         </td>
                         <td>
-                            <input type="submit" />
+                            <input type="submit" class="save" />
                         </td>
                     </tr>
                 </tbody>
